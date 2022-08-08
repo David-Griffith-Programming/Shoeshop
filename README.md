@@ -6,7 +6,7 @@ Description: An E-commerce website focusing around selling shoes <br>
 New Key Features:<br>
 <br>-Plan on using AJAX and APIS
 <br>-Getting to a higher level of bootstrap for better visual design 
--My wireframe will be based off of the e-commerce website provided on the platform because honestly its a good wireframe,  
+<br>-My wireframe will be based off of the e-commerce website provided on the platform because honestly its a good wireframe,  
 although I will be adding other things as well to make it unique obviously.
 
 
