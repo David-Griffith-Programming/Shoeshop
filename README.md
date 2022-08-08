@@ -7,7 +7,7 @@ New Key Features:<br>
 <br>-Plan on using AJAX and APIS
 <br>-Getting to a higher level of bootstrap for better visual design 
 <br>-My wireframe will be based off of the e-commerce website provided on the platform because honestly its a good wireframe,  
-although I will be adding other things as well to make it unique obviously.
+although I will be adding other things as well to make it unique to me and my style.
 
 
 Layout<br>
