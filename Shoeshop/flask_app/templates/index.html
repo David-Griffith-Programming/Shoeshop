@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark" style="--bs-bg-opacity: .95;">
+    
+    
+    <!-- Navbar -->
+    
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Shoeshop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Signup</a>
+        </li>
+        {% if 'user_id' in session %}
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">Logout</a>
+        </li>
+        {% endif %}
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+
+<div id="carouselExampleCaptions" class="container mt-5 carousel slide p-0" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/images/Atheticshoe.jpg" class="w-100 d-block" alt="..." style="width:auto; height: 600px; object-fit:cover">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sporty</h5>
+        <p>Check out our best sellers!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/Boatshoes.jpg" class="d-block w-100" alt="..." style="width:auto; height: 600px; object-fit:cover">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Boat</h5>
+        <p>A classic, click to check them out!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/images/Oxford.jpg" class="d-block w-100" alt="..." style="width:auto; height: 600px; object-fi:cover">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Dress</h5>
+        <p>Timeless, we have the perfect fit for you, click on the image to find yours!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="div">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-1 text-center mt-5 text-light">Shoes</h1>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sporty Shoes -->
+
+
+
+<div class="container d-flex flex-row mx-auto mt-5 flex-wrap">
+  {% for product in products %}
+  <div class="card me-5 mb-5" style="width: 18rem;">
+    <img src="static/images/revolt.jpg" class="card-img-top" alt="..." style="width:auto; height:200px; object-fit: cover;">
+    <div class="card-body">
+      <h5 class="card-title">Sho</h5>
+      <p class="card-text">$75</p>
+      <a href="#" class="btn btn-primary">Add to cart</a>
+    </div>
+  </div>
+  {% endfor %}  
+</div> 
+
+<!-- Footer -->
+
+
+<div class="container-fluid bg-dark mt-5 text-light text-center" style="width:auto; height:600px;">
+  <div class="row">
+    <div class="col-4 mt-5 fs-5">
+      Helpful links
+      <div class="list-group mt-5">
+        <a href="#" class="bg-dark text-light">Home</a>
+      </div>
+    </div>
+    <div class="col-4 mt-5 fs-5">Socials
+      <div class="list-group mt-5">
+        <a href="#" class="bg-dark text-light">Facebook</a>
+        <a href="#" class="bg-dark text-light">Twitter</a>
+        <a href="#" class="bg-dark text-light">Instagram</a>
+        <a href="#" class="bg-dark text-light">Youtube</a>
+      </div>
+    </div>
+    <div class="col-4 mt-5 fs-5">About us
+      <div class="list-group mt-5">
+        <a href="#" class="bg-dark text-light">About</a>
+        <a href="#" class="bg-dark text-light">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col fs-5" style="margin-top: 200px;">Shoeshop ⓒ All rights reserved.</div>
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
