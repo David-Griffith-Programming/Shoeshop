@@ -1,3 +1,13 @@
+UPDATE FOR COMMIT ON 8/26/2022
+Took a bit too long on trying to make things pretty/ trying out new things with bootstrap that I missed a lot of the functionality that I would have liked to have had done by now but will be continuing work on that after graduation. I have learned to be more aware of the time that I have left and not try to get stuck on one thing for too long in the future for development.
+
+
+
+
+
+
+
+
 # Shoeshop
 
 Project : E-commerce Website<br>
